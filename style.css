@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reem Kufi Fun';
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    /* font-weight: 400; */
+}
+
+.container{
+    /* border: 2px solid red; */
+    background-image: url(./Images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 38vh;
+    word-spacing: 2px;
+    font-size: 17px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+.container img{
+    cursor: pointer;
+}
+.todo-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    /* border: 2px solid red; */
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    letter-spacing: 20px;
+    margin-top: 4rem;
+}
+.header img{
+    /* border: 2px solid yellow; */
+    margin-top: 16px;
+    height:28px;
+    width: 28px;
+}
+.todo-fill{
+    /* border: 2px solid red; */
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.todo-fill span{
+    border: 1px solid rgb(83, 83, 83);
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.input{
+    background-color: hsl(235, 24%, 19%);
+    width: 600px;
+    padding: 25px 70px;
+    border-radius: 5px;
+    outline: none;
+    word-spacing: 2px;
+    border: none;
+    font-size: 17px;
+    color:white;
+}
+.text{
+    max-height: 23rem;
+    overflow-y: scroll;
+    background-color: hsl(235, 24%, 19%);
+}
+.text::-webkit-scrollbar {
+    display: none;
+}
+.todo-list{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 19px 19px;
+    width: 600px;
+    height: 70px;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+.checkNPara{
+    display: flex;
+}
+.todo-list p{
+    /* border: 2px solid red; */
+    margin-left: 25px;
+    cursor:default;
+}
+.check{
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+}
+
+.check-icon{
+    /* border: 2px solid red; */
+    display: none;
+}
+.check:hover{
+    border: 1px solid rgb(132, 212, 237);
+    cursor: pointer;
+}
+.close{
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.todo-list:hover .close{
+    opacity: 1;
+}
+.selection{
+    background-color: hsl(235, 24%, 19%);
+    width: 600px;
+    display: flex;
+    padding: 19px 22px;
+    justify-content: space-between;
+    color: rgb(124, 124, 124);
+    /* border-top: 1px solid rgb(83, 83, 83); */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.select-choice p:hover{
+    color:white;
+    cursor: pointer;
+}
+
+.clear-completed:hover{
+    color: white;
+    cursor: pointer;
+}
+.select-choice{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+}
+.input-light-theme{
+    background-color: hsl(0, 0%, 98%);
+    color:black;
+}
+.theme-for-selection{
+    background-color: hsl(0, 0%, 98%)
+}
+.body-bg{
+    background-color: hsl(236, 33%, 92%)
+}
+.theme-for-selection p:hover{
+    color: black;
+}
+.theme-selection-first-p:hover{
+    color: rgb(124, 124, 124);
+}
+.todo-list-bg{
+    color:black;
+    background-color: hsl(0, 0%, 98%);
+}
+.check-icon-style{
+    display: block;
+    margin-left: 8px;
+    margin-top: 9px;
+}
+.active-check{
+    background: linear-gradient(129deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    border: 1px solid hsl(235, 24%, 19%);
+}
+.line-thru{
+    text-decoration: line-through;
+    opacity: 0.5;
+    text-align: center;
+}
+.display-active{
+    display: none;
+}
+.display-completed{
+    display: none;
+}
+.add-blue{
+    color:hsl(220, 98%, 61%);
+}
