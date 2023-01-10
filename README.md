@@ -1,5 +1,5 @@
 to-do-application
 application project
 
-Live Site URL: hosted here
+Live Site URL: https://spiffy-squirrel-832854.netlify.app/
 
